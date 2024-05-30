@@ -1,0 +1,13 @@
+search bar for searching for a specific product
+
+```html
+<!-- Path: frontend/templates/search.html -->
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Search</h1>
+    <form method="GET">
+    {{ form.hidden_tag() }}
+    {{ form.search.label }} {{ form.search() }}
+    {{ form.submit() }}
+    </form>
+{% endblock %}
