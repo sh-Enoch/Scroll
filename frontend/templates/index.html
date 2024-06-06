@@ -1,18 +1,36 @@
-# create the home page for  Scroll Ebook store
-from this the user can navigate to the login and register pages
-the page doesnot extand base.html
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title> 
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Welcome to Scroll Ebook store</p>
-    <a href="/login">Login</a>
-    <a href="/register">Register</a>
+    <header class="bg-primary text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="font-weight-light">Welcome to Scroll</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <p class="lead text-center">
+                    Hello Dearest Gentle Reader,
+                    Welcome to Scroll, your one-stop destination for all your reading needs.
+
+Dive into a universe where each scroll unfolds a new adventure. 
+From timeless classics to contemporary bestsellers, Scroll brings the magic of books directly to your screen. 
+
+Explore our vast collection, find your next great read,
+ and enjoy an immersive e-reading experience, all in one plac</p>.</p>
+                <div class="text-center mt-4">
+                    <a href="/login" class="btn btn-lg btn-secondary">Login</a>
+                    <a href="/register" class="btn btn-lg btn-secondary">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
